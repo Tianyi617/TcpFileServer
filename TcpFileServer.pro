@@ -12,7 +12,12 @@ TARGET = TcpFileServer
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        tcpfileserver.cpp
+HEADERS += tcpfilesender.h \
+           mainwindow.h \
+           tcpfileserver.h \
 
-HEADERS  += tcpfileserver.h
+SOURCES += tcpfilesender.cpp \
+           mainwindow.cpp \
+           tcpfileserver.cpp \
+           main.cpp
+
